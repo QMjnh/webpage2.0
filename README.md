@@ -1,103 +1,67 @@
-# just-the-docs-template
+---
+title: Home
+layout: home
+---
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+# Le Quang Minh
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+summary of this site's content is in this pdf: [CV_QMinh_06Nov](https://qmjnh.github.io/CV-resume/cv.pdf)
 
-More specifically, the created site:
+## Education and Academic Achievements
+### Schools and Grades
+#### Tran Dai Nghia High School for the Gifted (HCMC, Viet Nam)
+2016-2020
+* Grade 9: 9.4
+#### Le Hong Phong High School for the Gifted (HCMC, Viet Nam)
+2020-2023, Physics Major
+* Grade 10: 9.0 
+* Grade 11: 9.5 (ranked 1st in class)
+* Grade 12: N/A
+### Testings and Awards
+##### Standardize Tests:
+* IELTS: 8.0
+    - Reading: 9.0
+    - Listening: 9.0
+    - Writing: 7.0
+    - Speaking: 7.5
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+* SAT: 1500 (Aug 27th, 2022)
+    * Math: 780
+    * Reading and Writing: 720
 
-To get started with creating a site, just click "[use this template]"!
+#### Honors and Awards:
+* *Second Prize* in Physics  ***HCMC Excellent Student Contest (2020)***
+* *Fourth Prize*  ***Fisico Experimental Physics Contest (2021)*** endorsed by Physics and Youth Magazine of Vietnam Physical Society
+* *Runner-up* in ***Le Hong Phong soccer tournament (2022)***
 
-After completing the creation of your new site on GitHub, update it as needed:
+## Course Works, Projects and Experience
+### Course work
+* ***LHP-CoTAI Artificial Intelligence Program*** 
+![](https://imgur.com/eDOwrsO.png)
+    * AI for all (AI4ALL) (2020)
+    * Math & Code for AI (MC4AI) (2021)
+    * Machine Learning for AI (ML4AI) (2022)
 
-## Replace the content of the template pages
+* ***Math and Science Summer Program (MaSSP)*** by MIT Vietnamese Student Association
 
-Update the following files to your own content:
+As a Data Science Mentee, I got the chance to make new friends, to work and learn from great mentors working in big-tech companies or doing research at universities across the world.
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+![](https://i.imgur.com/hVL7WXw.png)
 
-## Changing the version of the theme and/or Jekyll
+I got the chance to learn about Maths & Statistics, combine with what I've known in Artificial Intelligence, implemented in practice to form Data Science
 
-Simply edit the relevant line(s) in the `Gemfile`.
+### Projects
+* ***Flower Classifier [Interactive Model](https://huggingface.co/spaces/qmjnh/flowerClassification_2)***
+This is the Capstone Project for ML4AI. This is a Machine Learning model built (using the oxford-102-flowers dataset) to classify the flower from any given input image. Read more about the model in this [Github repo](https://github.com/QMjnh/ML4AI_CAPSTONE_FlowersClassification) or watch model’s presentation (in Vietnamese) [here](https://youtu.be/xVstwl1LjRM).
 
-## Adding a plugin
+* ***Modified Chrome Dino [game](https://qmjnh.github.io/dinogame/)***
+The original Chromium Dino game was modified in animations and interface to become a slightly different game. It looks simple but the modification in animation was especially tricky and requires understanding of sprite-sheet animation, game mechanics, HTML and CSS to create a 3-frame-animation from the original 2-frame-animation.
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+* ***Website [demo](https://qmjnh.github.io/CL1_20-23/)***
+It is just a website demo that I made for fun, to apply what I learned in CSS, HTML, and JavaScript
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+### Experience
+* ***Teaching Assistant*** in PythonAI course at LHP-CoTAI 2022 AI program
+![](https://i.imgur.com/XUBYdUB.png)
 
-- Add the following to your site's `Gemfile`:
-
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
-
-- And add the following to your site's `_config.yml`:
-
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
-  
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
-
-## Publishing your site on GitHub Pages
-
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
-
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
-
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
-
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
-
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
+My job's title is to self-explanatory. I help students and answers their questions both in class and after class to make sure they're confident with the material. I also occasionally do online tutor sessions to help the students get a better grasp of the previous sessions or to revise before the exams. I also do backstage work like grading homework or preparing the room for class. 
