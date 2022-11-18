@@ -1,6 +1,6 @@
 ---
 title: Academics
-layout: Academics
+layout: home
 ---
 
 # Le Quang Minh
