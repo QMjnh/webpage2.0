@@ -1,3 +1,7 @@
+---
+title: Academics
+layout: Academics
+---
 
 # Le Quang Minh
 
